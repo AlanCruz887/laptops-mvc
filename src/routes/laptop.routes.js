@@ -7,9 +7,9 @@ router.get('/',laptopController.obtenerLaptops);
 
 router.get('/:ns',laptopController.buscarLaptop)
 
-router.delete('/:ns',laptopController.eliminarLaptop)
+router.delete('/eliminar/:ns',laptopController.eliminarLaptop)
 
-router.post('/',laptopController.insertarLaptop)
+router.post('/insertar',laptopController.insertarLaptop)
 
 
 

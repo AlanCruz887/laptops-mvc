@@ -4,6 +4,7 @@ const app = express();
 
 // Settings
 app.set('port', process.env.PORT||3300);
+app.set('view engine','ejs')
 
 // Middlewares
 app.use(express.json());

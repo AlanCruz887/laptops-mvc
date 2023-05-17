@@ -3,5 +3,5 @@ mongoose.connect("mongodb+srv://Alan:HailedSquare881@alan.rbrdfgi.mongodb.net/co
 .then((result) => {
     console.log("CONNECTED TO MONGO ATLAS")
 }).catch((err) => {
-    console.err(err)
+    console.error(err)
 });
