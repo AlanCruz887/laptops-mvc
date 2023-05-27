@@ -7,6 +7,13 @@ laptopController.obtenerLaptops = async (req,res)=>{
     res.render('../src/views/index.ejs',{laptops})
 }
 
+
+laptopController.todos = async (req,res)=>{
+    const laptops = await laptop.find()
+    res.json(laptops)
+}
+
+
 laptopController.insertarLaptop = async (req,res)=>{
     const productoInsertado = new laptop(req.body)
     productoInsertado.save()

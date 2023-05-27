@@ -5,6 +5,8 @@ const laptopController = require('../controllers/laptop.controller');
 
 router.get('/',laptopController.obtenerLaptops);
 
+router.get('/todos',laptopController.todos)
+
 router.get('/:ns',laptopController.buscarLaptop)
 
 router.delete('/eliminar/:ns',laptopController.eliminarLaptop)
